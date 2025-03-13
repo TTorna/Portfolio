@@ -1,0 +1,173 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --swiper-theme-color: rgb(250 204 21);
+  font-family: "Instrument Sans", sans-serif;
+  color: white;
+}
+
+body {
+  background: #0E0E0E;
+}
+
+h3 {
+  color: #D6D6D6;
+}
+
+
+.contenedor-tachado{
+  position: relative;
+}
+
+.contenedor-tachado::before{
+  content: '';
+  position: absolute;
+  top: 55%;
+  left: 0;
+  width: 1%;
+  height: 2px;
+  margin-bottom: -0.25rem;
+  margin-left: -0.3rem;
+  background: #0E0E0E;
+  transition: all 0.5s cubic-bezier(.77,0,.175,1);
+  z-index: 2;
+}
+
+.contenedor-tachado:hover::before{
+  width: 125%;
+  background: #793FED;
+}
+
+
+
+/* Navbar -- Efectos de animacion */
+.efecto-tachado{
+  position: absolute;
+  height: 2px;
+  width: 1px;
+  margin-bottom: -0.25rem;
+  margin-left: -0.2rem;
+  background: #0E0E0E;
+  z-index: 2;
+  transition: all 0.5s cubic-bezier(.77,0,.175,1);
+}
+
+.contenedor-tachado1:hover .efecto-tachado{
+  width: 3.75rem;
+  background: #793FED;
+}
+
+.titulo-tachado{
+  z-index: 1;
+  transition: all 0.5s cubic-bezier(.77,0,.175,1);
+}
+
+.titulo-tachado:hover{
+  scale: 1.1;
+}
+/* --- */
+
+.circulo{
+  width: 450px;
+  height: 450px;
+}
+
+.color-chupete{
+  color: #793FED;
+  background: #793FED;
+}
+
+.animacion{
+  animation: float 5s ease infinite;
+}
+
+.intermitente{
+  animation: intermitente 1s linear infinite;
+  transition: all 0.5s cubic-bezier(.77,0,.175,1);
+}
+
+.boton-animado{
+  width: fit-content;
+}
+
+.circ{
+  transition: all 0.5s cubic-bezier(.77,0,.175,1);
+}
+
+.boton-animado:hover .circ{
+  width: 13rem;
+  background: #110127;
+}
+
+.scroll-animado{
+  transition: transform 0.5s cubic-bezier(.77,0,.175,1);
+}
+
+.scroll-animado:hover{
+  color: white;
+  transform: translateX(1rem);
+}
+
+.scroll-animado:hover .intermitente{
+  animation: none;
+}
+
+@keyframes intermitente {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(5px); /* Posición inicial */
+  }
+  50%{
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(5px); /* Se mueve hacia arriba 20px */
+  }
+}
+
+.flechita{
+  width: 40px;
+  height: 1px;
+  background: #000;
+
+}
+
+.imagenClass {
+  width: 75%;
+  max-width: 400px;
+}
+
+@layer utilities {
+  .perspective {
+    perspective: 1000px;
+  }
+  
+  .-rotate-y-12 {
+    transform: rotateY(-12deg);
+  }
+}
+
+.maps{
+  width: 95%;
+  margin: auto;
+}
+
+.wave-divider {
+  position: relative;
+  background: white;
+  margin-top: -1px;
+}
+
+.wave-divider svg {
+  display: block;
+}
