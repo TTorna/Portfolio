@@ -10,22 +10,42 @@ const ScrollAd = () => {
     useEffect(() => {
         const handleScroll = () => {
             const scrollPosition = window.scrollY;
+            const windowHeight = window.innerHeight;
             
             // Encontrar la sección actual basada en la posición del scroll
             for (let i = sections.length - 1; i >= 0; i--) {
                 const section = document.getElementById(sections[i]);
-                if (section && section.offsetTop <= scrollPosition + 300) {
-                    // Solo aplicar efecto si entramos o salimos de la última sección
-                    if ((i === sections.length - 1) !== (currentSection === sections.length - 1)) {
-                        setIsVisible(false);
-                        setTimeout(() => {
+                if (section) {
+                    const sectionTop = section.offsetTop;
+                    
+                    // Si estamos en el footer, verificar si es visible en la pantalla
+                    if (sections[i] === 'footer') {
+                        // Requiere que se vea al menos 1rem del footer
+                        const footerVisible = scrollPosition + windowHeight >= sectionTop + 16; // 1rem = 16px
+                        if (footerVisible) {
+                            if (currentSection !== sections.length - 1) {
+                                setIsVisible(false);
+                                setTimeout(() => {
+                                    setCurrentSection(sections.length - 1);
+                                    setIsVisible(true);
+                                }, 300);
+                            } else {
+                                setCurrentSection(sections.length - 1);
+                            }
+                            break;
+                        }
+                    } else if (sectionTop <= scrollPosition + 300) {
+                        if ((i === sections.length - 1) !== (currentSection === sections.length - 1)) {
+                            setIsVisible(false);
+                            setTimeout(() => {
+                                setCurrentSection(i);
+                                setIsVisible(true);
+                            }, 300);
+                        } else {
                             setCurrentSection(i);
-                            setIsVisible(true);
-                        }, 300);
-                    } else {
-                        setCurrentSection(i);
+                        }
+                        break;
                     }
-                    break;
                 }
             }
         };
@@ -66,16 +86,16 @@ const ScrollAd = () => {
         }
     };
 
-    const isFooterSection = currentSection === sections.length - 1;
+    const isFooter = currentSection === sections.length - 1;
 
     return (
         <div>
             <a onClick={scrollToNextSection} className="fixed z-20 rotate-90 -right-[2rem] bottom-[8rem]">
                 <span className={`flex flex-row scroll-animado gap-3 text-xs cursor-pointer transition-opacity duration-300 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
-                    {isFooterSection ? (
+                    {isFooter ? (
                         <>
                             <img className="intermitente -rotate-180 ml-[3rem]" src="./Arrow.png" />
-                            <span className='text-black font-medium text-[1rem]'>TOP</span>
+                            <span className='text-black font-medium'>TOP</span>
                         </>
                     ) : (
                         <>

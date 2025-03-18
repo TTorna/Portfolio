@@ -163,8 +163,8 @@ function App() {
           </div>
           <div className="w-3/4 flex flex-col justify-center mt-[4rem] md:mb-[0rem] mb-[4rem]">
             <h2 className="text-2xl font-bold pb-[1rem]">PROJECTS REPOSITORIES</h2>
-            <h4 className="font-bold"><span className="text-gray-500 mr-[0.5rem]">/ 01 </span><span className="text-gray-300 mr-[0.7rem] cursor-pointer">{"<src />"} </span><span className="text-xl text-gray-100 cursor-pointer underline underline-offset-2 hover:ml-[0.5rem] before:hover:bg-gray-400 transition-all duration-300">VICKENS</span></h4>
-            <h4 className="font-bold"><span className="text-gray-500 mr-[0.5rem]">/ 02 </span><span className="text-gray-300 mr-[0.7rem] cursor-pointer">{"<src />"} </span><span className="text-xl text-gray-100 cursor-pointer underline underline-offset-2 hover:ml-[0.5rem] before:hover:bg-gray-400 transition-all duration-300">TANTOS</span></h4>
+            <h4 className="font-bold"><span className="text-gray-500 mr-[0.5rem]">/ 01 </span><span className="text-gray-300 mr-[0.7rem] cursor-pointer">{"<src />"} </span><a href="https://github.com/TTorna/Heladeria" className="text-xl text-gray-100 cursor-pointer underline underline-offset-2 hover:ml-[0.5rem] before:hover:bg-gray-400 transition-all duration-300">VICKENS</a></h4>
+            <h4 className="font-bold"><span className="text-gray-500 mr-[0.5rem]">/ 02 </span><span className="text-gray-300 mr-[0.7rem] cursor-pointer">{"<src />"} </span><a href="https://github.com/TTorna/Tantos" className="text-xl text-gray-100 cursor-pointer underline underline-offset-2 hover:ml-[0.5rem] before:hover:bg-gray-400 transition-all duration-300">TANTOS</a></h4>
           </div>
         </section>
         <section id="contacto" className="w-screen md:min-h-screen min-h-[fit-content] md:pt-[0rem] pt-[4rem] md:pb-[0rem] pb-[4rem] z-10 bg-[#161616] flex flex-col justify-center items-center">

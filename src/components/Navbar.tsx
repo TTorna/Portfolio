@@ -40,7 +40,7 @@ function Navbar () {
   const bg_nav = ` ${
     isOpen
       ? 'before:w-full before:h-full'
-      : 'before:w-[0px] md:h-[fit-content] h-[100%]'
+      : 'before:h-[0px] h-[fit-content]'
   }`;
 
   const linkClasses = `transition-colors text-white cursor-pointer`;
