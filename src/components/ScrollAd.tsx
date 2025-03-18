@@ -74,13 +74,13 @@ const ScrollAd = () => {
                 <span className={`flex flex-row scroll-animado gap-3 text-xs cursor-pointer transition-opacity duration-300 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
                     {isLastSection ? (
                         <>
-                            <img className="intermitente -rotate-180 ml-[3rem]" src="../public/Arrow.png" />
+                            <img className="intermitente -rotate-180 ml-[3rem]" src="./Arrow.png" />
                             TOP
                         </>
                     ) : (
                         <>
                             SCROLL DOWN
-                            <img className="intermitente" src="../public/Arrow.png" />
+                            <img className="intermitente" src="./Arrow.png" />
                         </>
                     )}
                 </span>

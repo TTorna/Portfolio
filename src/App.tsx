@@ -141,7 +141,7 @@ function App() {
               titulo="VICKENS - HELADERIA"
               tecnologias={["React", "TypeScript", "Tailwind"]}
               colorFondo="#8A2BE2"
-              imagenUrl="./public/vickens.png"
+              imagenUrl="./Vickens.png"
               link="https://vickens.vercel.app"
             />
             <TarjetaIndividual 
@@ -149,7 +149,7 @@ function App() {
               titulo="TANTOS - ANOTADOR"
               tecnologias={["React", "JavaScript", "CSS"]}
               colorFondo="#8A2BE2"
-              imagenUrl="./public/Tantos.png"
+              imagenUrl="./Tantos.png"
               link="https://Tantos.vercel.app"
             />
             <TarjetaIndividual 
@@ -157,7 +157,7 @@ function App() {
               titulo="GITHUB - TOMAS TORNAMIRA"
               tecnologias={["Front-End", "Back-End", "IA"]}
               colorFondo="#8A2BE2"
-              imagenUrl="./public/git.png"
+              imagenUrl="./git.png"
               link="https://https://github.com/TTorna"
             />
           </div>
