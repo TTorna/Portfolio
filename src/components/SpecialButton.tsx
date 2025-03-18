@@ -37,7 +37,7 @@ const SpecialButton = ({
             <div className={`absolute circ -ml-[1rem] -z-10 ${circleColor} w-[2.25rem] h-[2.25rem] rounded-full`}></div>
             <img 
                 className={`w-[2rem] ml-[1rem] ${arrowColor}`} 
-                src="../public/Arrow.png" 
+                src="./Arrow.png" 
                 alt="arrow"
             />
         </div>
