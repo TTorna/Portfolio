@@ -27,20 +27,19 @@ const SpecialButton = ({
     };
 
     return (
-        <div className={`${classStyle} flex flex-row justify-left items-center pl-[1rem] pt-[1rem]`}>
-            <button 
-                onClick={handleClick} 
+        <button onClick={handleClick} className={`${classStyle} flex flex-row justify-left items-center pl-[1rem] pt-[1rem]`}>
+            <span 
                 className={`-mb-[0.1rem] segundafuente ${textColor}`}
             >
                 {text}
-            </button>
+            </span>
             <div className={`absolute circ -ml-[1rem] -z-10 ${circleColor} w-[2.25rem] h-[2.25rem] rounded-full`}></div>
             <img 
                 className={`w-[2rem] ml-[1rem] ${arrowColor}`} 
                 src="./Arrow.png" 
                 alt="arrow"
             />
-        </div>
+        </button>
     );
 };
 
