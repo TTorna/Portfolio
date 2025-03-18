@@ -5,7 +5,7 @@ const ScrollAd = () => {
     const [isVisible, setIsVisible] = useState(true);
     
     // Array de IDs de secciones en orden
-    const sections = ['home', 'about', 'proyectos', 'contacto'];
+    const sections = ['home', 'about', 'proyectos', 'contacto', 'footer'];
 
     useEffect(() => {
         const handleScroll = () => {
@@ -52,7 +52,7 @@ const ScrollAd = () => {
                 if (currentSection === sections.length - 1) {
                     scrollToSection('home');
                 } else {
-                    scrollToSection('contacto');
+                    scrollToSection('footer');
                 }
                 setIsVisible(true);
             }, 300);
@@ -66,16 +66,16 @@ const ScrollAd = () => {
         }
     };
 
-    const isLastSection = currentSection === sections.length - 1;
+    const isFooterSection = currentSection === sections.length - 1;
 
     return (
         <div>
             <a onClick={scrollToNextSection} className="fixed z-20 rotate-90 -right-[2rem] bottom-[8rem]">
                 <span className={`flex flex-row scroll-animado gap-3 text-xs cursor-pointer transition-opacity duration-300 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
-                    {isLastSection ? (
+                    {isFooterSection ? (
                         <>
                             <img className="intermitente -rotate-180 ml-[3rem]" src="./Arrow.png" />
-                            TOP
+                            <span className='text-black font-medium text-[1rem]'>TOP</span>
                         </>
                     ) : (
                         <>

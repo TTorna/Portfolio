@@ -22,14 +22,14 @@ export const TarjetaIndividual: React.FC<TarjetaProps> = ({
 }) => {
   return (
     <div className="bg-[transparent] cursor-pointer rounded-[0.5rem] transition-transform before:mt-[-1rem] before:ml-[-1rem] before:bg-[#242424] hover:scale-105 container-card">
-      <div className="relative w-[14rem] rounded-[0.5rem] before:shadow-2xl container-card">
+      <a href={link} className="relative w-[14rem] rounded-[0.5rem] before:shadow-2xl container-card">
         {/* Círculo con número */}
         <div className="absolute top-[0.3rem] left-[0.3rem] bg-gray-300 font-bold text-black text-sm h-8 w-8 rounded-full flex items-center justify-center z-10">
           {numero}
         </div>
         
         {/* Icono de expansión */}
-        <a href={link} className="absolute top-[0.3rem] right-[0.3rem] bg-transparent text-black z-10 hover:text-gray-300">
+        <a className="absolute top-[0.3rem] right-[0.3rem] bg-transparent text-black z-10 hover:text-gray-300">
           <ArrowUpRight size={24} />
         </a>
         
@@ -63,7 +63,7 @@ export const TarjetaIndividual: React.FC<TarjetaProps> = ({
             </button>
           ))}
         </div>
-      </div>
+      </a>
     </div>
   );
 };

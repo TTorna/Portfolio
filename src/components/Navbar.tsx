@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Menu, X, MapPin } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 
 function Navbar () {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,21 +25,33 @@ function Navbar () {
     setIsOpen(false); // Cerrar menú móvil si está abierto
   };
 
-  const navClasses = `fixed w-full top-0 z-50 transition-all duration-300 ${
+  const navClasses = `fixed w-full top-0 z-[100] transition-all duration-300 ${
     scrolled
       ? ''
       : ''
+  }`;
+
+  {/*const bg_nav = `md:bg-transparent ${
+    isOpen
+      ? 'bg-[#0E0E0E]'
+      : 'bg-transparent'
+  }`;*/}
+
+  const bg_nav = ` ${
+    isOpen
+      ? 'before:w-full before:h-full'
+      : 'before:w-[0px] md:h-[fit-content] h-[100%]'
   }`;
 
   const linkClasses = `transition-colors text-white cursor-pointer`;
 
   return (
     <>
-        <nav className={navClasses}>
-          <div className="mx-auto font-bold px-4 py-2">
-            <div className="flex justify-between h-20">
+        <nav className={navClasses+' nav-contenedor tansicion '+bg_nav}>
+          <div className={"mx-auto font-bold px-4 py-2 bg-transparent"}>
+            <div className={"flex md:pt-[0rem] pt-[1rem] justify-between h-20 bg-transparent"}>
               {/* Logo */}
-              <div className="flex items-center space-x-2">
+              <div className="flex items-center space-x-2 z-[7]">
                 <img src='./Kill_Contract.webp' className={`h-16 w-16 text-white`} />
               </div>
 
@@ -63,7 +75,7 @@ function Navbar () {
               </div>
 
               {/* Mobile menu button */}
-              <div className="md:hidden flex items-center">
+              <div className="md:hidden flex items-center pr-[1rem] z-[7]">
                 <button
                   onClick={() => setIsOpen(!isOpen)}
                   className={linkClasses}
@@ -76,25 +88,34 @@ function Navbar () {
 
           {/* Mobile Menu */}
           {isOpen && (
-            <div className={`md:hidden border-t ${scrolled ? 'bg-pink-500' : 'bg-white'}`}>
-              <div className="px-2 pt-2 pb-3 space-y-1">
-                <div className="space-y-2">
-                  <a onClick={() => scrollToSection('home')} className={`w-full flex justify-between items-center font-medium px-3 py-2 ${linkClasses}`}>HOME</a>
-                </div>
+            <div className={`md:hidden bg-transparent`}>
+              <div className="flex flex-col items-center justify-center pb-[10rem] w-full h-[100vh] gap-4 pt-2 pb-3 space-y-1 nav-mobile">
+                <a 
+                  onClick={() => scrollToSection('home')} 
+                  className={`w-full flex justify-center items-center font-medium contenedor-tachado before:bg-[#161616] before:left-[25%] hover:before:w-[50%] text-[2rem] z-[7] ${linkClasses} opacity-0 animate-[fadeIn_0.5s_ease-in-out_0.1s_forwards]`}
+                >
+                  HOME
+                </a>
 
-                <div className="space-y-2">
-                  <a onClick={() => scrollToSection('about')} className={`w-full flex justify-between items-center font-medium px-3 py-2 ${linkClasses}`}>ABOUT</a>
-                </div>
+                <a 
+                  onClick={() => scrollToSection('about')} 
+                  className={`w-full flex justify-center items-center font-medium contenedor-tachado before:bg-[#161616] before:left-[25%] hover:before:w-[50%] text-[2rem] z-[7] ${linkClasses} opacity-0 animate-[fadeIn_0.5s_ease-in-out_0.2s_forwards]`}
+                >
+                  ABOUT
+                </a>
 
-                <a onClick={() => scrollToSection('proyectos')} className={`block font-medium px-3 py-2 ${linkClasses}`}>PROYECTOS</a>
+                <a 
+                  onClick={() => scrollToSection('proyectos')} 
+                  className={`w-full flex justify-center items-center font-medium contenedor-tachado before:bg-[#161616] before:left-[25%] hover:before:w-[50%] text-[2rem] z-[7] ${linkClasses} opacity-0 animate-[fadeIn_0.5s_ease-in-out_0.3s_forwards]`}
+                >
+                  PROYECTOS
+                </a>
                 
-                <a onClick={() => scrollToSection('contacto')} className={`w-full flex justify-between items-center px-1 py-2 ${linkClasses}`}>
-                  <button className={`flex w-full justify-start items-center gap-2 rounded-full px-4 py-2 font-medium ${
-                      scrolled ? 'bg-white text-pink-500 hover:text-pink-700' : 'bg-teal-500 text-white'
-                    }`}>
-                    <MapPin className="h-6 w-6" />
-                    <span>CONTACT</span>
-                  </button>
+                <a 
+                  onClick={() => scrollToSection('contacto')} 
+                  className={`w-full flex justify-center items-center font-medium contenedor-tachado before:bg-[#161616] before:left-[25%] hover:before:w-[50%] text-[2rem] z-[7] ${linkClasses} opacity-0 animate-[fadeIn_0.5s_ease-in-out_0.4s_forwards]`}
+                >
+                  CONTACTO
                 </a>
               </div>
             </div>

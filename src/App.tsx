@@ -209,13 +209,13 @@ function App() {
               </a>
           </div>
         </section>
-        <footer className="w-[100vw] md:min-h-[65vh] min-h-[fit-content] z-10 bg-white text-[#0E0E0E] flex flex-col justify-between items-center">
-          <div className="w-full flex flex-col gap-[1rem] font-bold justify-center items-center mt-[7rem] circulo-footer">
+        <footer id="footer" className="w-[100vw] md:min-h-[65vh] min-h-[fit-content] z-10 bg-white text-[#0E0E0E] flex flex-col justify-between items-center">
+          <div className="w-full flex flex-col text-center gap-[1rem] font-bold justify-center items-center mt-[7rem] circulo-footer">
             <h1 className="text-[3rem] pb-[1rem]">TRABAJEMOS JUNTOS</h1>
             <h3 className="text-[1.1rem] text-[#0E0E0E] pb-[1rem]">Estoy esperando tu gran propuesta para hacerla realidad.</h3>
             <SpecialButton text="DIME HOLA" link="https://www.linkedin.com/in/tomas-tornamira-118428239/" circleColor="bg-gray-400" textColor="text-black" arrowColor="brightness-0" classStyle="boton-animado-footer"/>
           </div>
-          <div className="flex flex-row gap-[1rem] justify-center items-center mb-[2rem] mt-[4rem]">
+          <div className="flex flex-row gap-[1rem] justify-center items-center mb-[2rem] mt-[8rem]">
             <span className="text-sm font-bold mr-[0.5rem]">© 2025 Tomas Tornamira</span>
             <a href="https://www.linkedin.com/in/tomas-tornamira-118428239/" className="hover:bg-gray-300 rounded-full p-[0.25rem]" target="_blank" rel="noopener noreferrer">
               <img src='./linkedin.svg' className="w-[2rem] icono-redsocial" alt="LinkedIn" />
