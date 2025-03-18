@@ -40,13 +40,13 @@ const SocialSidebar = () => {
             rel="noopener noreferrer"
             className="text-white hover:scale-125 duration-300 flex items-center group"
           >
-            <img src='./public/Linkedin.svg' className="w-[2rem]" alt="LinkedIn" />
+            <img src='./Linkedin.svg' className="w-[2rem]" alt="LinkedIn" />
           </a>
           <a
             href="mailto:Tototornamira@gmail.com"
             className="text-white hover:scale-125  duration-300 flex items-center group"
           >
-            <img src='./public/gmail.svg' className="w-[2rem]" alt="Gmail" />
+            <img src='./gmail.svg' className="w-[2rem]" alt="Gmail" />
           </a>
           <a
             href="https://github.com/TTorna"
@@ -54,7 +54,7 @@ const SocialSidebar = () => {
             rel="noopener noreferrer"
             className="text-white hover:scale-125  duration-300 flex items-center group"
           >
-            <img src='./public/github.svg' className="w-[2rem]" alt="Github" />
+            <img src='./github.svg' className="w-[2rem]" alt="Github" />
           </a>
           <a
             href="https://x.com/TTorna_"
@@ -62,7 +62,7 @@ const SocialSidebar = () => {
             rel="noopener noreferrer"
             className="text-white hover:scale-125 duration-300 flex items-center group"
           >
-            <img src='./public/X.svg' className="w-[2rem]" alt="Twitter" />
+            <img src='./X.svg' className="w-[2rem]" alt="Twitter" />
           </a>
         </div>
       </div>
