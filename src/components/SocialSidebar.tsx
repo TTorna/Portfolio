@@ -40,7 +40,7 @@ const SocialSidebar = () => {
             rel="noopener noreferrer"
             className="text-white hover:scale-125 duration-300 flex items-center group"
           >
-            <img src='./Linkedin.svg' className="w-[2rem]" alt="LinkedIn" />
+            <img src='./linkedin.svg' className="w-[2rem]" alt="LinkedIn" />
           </a>
           <a
             href="mailto:Tototornamira@gmail.com"
