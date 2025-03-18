@@ -46,7 +46,7 @@ function App() {
       <ScrollAd />
       <main className="w-3/4 min-h-screen mx-auto flex flex-col justify-center items-center">
         <section id="home" className="w-3/4 min-h-screen z-10 flex md:flex-row-reverse flex-col justify-center items-center">
-          <img src="./public/Iso_Artwork_Full.png" className="md:h-1/2 md:w-1/2 h-4/5 w-4/5 z-10 md:pt-10 pt-4 animacion" alt="avatar" />
+          <img src="./Iso_Artwork_Full.PNG" className="md:h-1/2 md:w-1/2 h-4/5 w-4/5 z-10 md:pt-10 pt-4 animacion" alt="avatar" />
           <div className="absolute -z-10 md:w-[25rem] w-[15rem] md:h-[25rem] h-[15rem] md:mb-[5rem] mb-[14rem] bg-zinc-900 w-md rounded-full"></div>
           <div className="font-bold">
             <h1 className="md:text-5xl text-4xl md:pb-12 pb-8">creative designer <br/> & developer.</h1>
@@ -58,7 +58,7 @@ function App() {
           <div className="md:w-3/4 w-full min-h-screen gap-4 flex flex-col justify-center items-center">
             <div className="flex flex-row justify-center items-center mt-[4rem]">
               <div className="absolute -z-10 bg-zinc-900 w-[10rem] h-[10rem] rounded-full"></div>
-              <img src="./public/Focusing_Spray.webp" className="h-2/5 w-2/5 z-10" alt="avatar" />
+              <img src="./Focusing_Spray.webp" className="h-2/5 w-2/5 z-10" alt="avatar" />
             </div>
             <h1 className="text-2xl font-bold">Soy <span className="text-purple-400 text-2xl">Tomas Tornamira</span></h1>
             <h3 className="text-sm font-bold md:w-1/3 sm:w-1/2 w-2/3">Técnico en computación, dedicado a crear aplicaciones de alto rendimiento con una arquitectura organizada, flexible y aplicada.<br /><br />
@@ -179,14 +179,14 @@ function App() {
                 rel="noopener noreferrer"
                 className="flex flex-row gap-4 ml-[1.2rem] mt-[0.3rem] items-center redsocial-container"
               >
-                <img src='./public/Linkedin.svg' className="w-[3rem] icono-redsocial" alt="LinkedIn" />
+                <img src='./linkedin.svg' className="w-[3rem] icono-redsocial" alt="LinkedIn" />
                 <h3 className="text-md text-black font-bold texto-redsocial">/Tomas Tornamira</h3>
               </a>
               <a
                 href="mailto:Tototornamira@gmail.com"
                 className="flex flex-row gap-4 ml-[1.2rem] mt-[0.3rem] items-center redsocial-container"
               >
-                <img src='./public/gmail.svg' className="w-[3rem] icono-redsocial" alt="Gmail" />
+                <img src='./gmail.svg' className="w-[3rem] icono-redsocial" alt="Gmail" />
                 <h3 className="text-md text-black font-bold texto-redsocial">Tototornamira@gmail.com</h3>
               </a>
               <a
@@ -195,7 +195,7 @@ function App() {
                 rel="noopener noreferrer"
                 className="flex flex-row gap-4 ml-[1.2rem] mt-[0.3rem] items-center redsocial-container"
               >
-                <img src='./public/github.svg' className="w-[3rem] icono-redsocial" alt="Github" />
+                <img src='./github.svg' className="w-[3rem] icono-redsocial" alt="Github" />
                 <h3 className="text-md text-black font-bold texto-redsocial">/TTorna</h3>
               </a>
               <a
@@ -204,7 +204,7 @@ function App() {
                 rel="noopener noreferrer"
                 className="flex flex-row gap-4 ml-[1.2rem] mt-[0.3rem] items-center redsocial-container"
               >
-                <img src='./public/X.svg' className="w-[3rem] icono-redsocial" alt="Twitter" />
+                <img src='./X.svg' className="w-[3rem] icono-redsocial" alt="Twitter" />
                 <h3 className="text-md text-black font-bold texto-redsocial">/TTorna_</h3>
               </a>
           </div>
@@ -215,19 +215,19 @@ function App() {
             <h3 className="text-[1.1rem] text-[#0E0E0E] pb-[1rem]">Estoy esperando tu gran propuesta para hacerla realidad.</h3>
             <SpecialButton text="DIME HOLA" link="https://www.linkedin.com/in/tomas-tornamira-118428239/" circleColor="bg-gray-400" textColor="text-black" arrowColor="brightness-0" classStyle="boton-animado-footer"/>
           </div>
-          <div className="flex flex-row gap-[1rem] justify-center items-center mb-[2rem]">
+          <div className="flex flex-row gap-[1rem] justify-center items-center mb-[2rem] mt-[4rem]">
             <span className="text-sm font-bold mr-[0.5rem]">© 2025 Tomas Tornamira</span>
             <a href="https://www.linkedin.com/in/tomas-tornamira-118428239/" className="hover:bg-gray-300 rounded-full p-[0.25rem]" target="_blank" rel="noopener noreferrer">
-              <img src='./public/Linkedin.svg' className="w-[2rem] icono-redsocial" alt="LinkedIn" />
+              <img src='./linkedin.svg' className="w-[2rem] icono-redsocial" alt="LinkedIn" />
             </a>
             <a href="mailto:Tototornamira@gmail.com" className="hover:bg-gray-300 rounded-full p-[0.25rem]" target="_blank" rel="noopener noreferrer">
-              <img src='./public/gmail.svg' className="w-[2rem] icono-redsocial" alt="Gmail" />
+              <img src='./gmail.svg' className="w-[2rem] icono-redsocial" alt="Gmail" />
             </a>
             <a href="https://github.com/TTorna" className="hover:bg-gray-300 rounded-full p-[0.25rem]" target="_blank" rel="noopener noreferrer">
-              <img src='./public/github.svg' className="w-[2rem] icono-redsocial" alt="Github" />
+              <img src='./github.svg' className="w-[2rem] icono-redsocial" alt="Github" />
             </a>
             <a href="https://x.com/TTorna_" className="hover:bg-gray-300 rounded-full p-[0.25rem]" target="_blank" rel="noopener noreferrer">
-              <img src='./public/X.svg' className="w-[2rem] icono-redsocial" alt="Twitter" />
+              <img src='./X.svg' className="w-[2rem] icono-redsocial" alt="Twitter" />
             </a>
           </div>
         </footer>
