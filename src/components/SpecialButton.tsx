@@ -8,7 +8,7 @@ interface SpecialButtonProps {
 }
 
 const SpecialButton = ({ 
-    text = "SEE MY WORKS",
+    text = "MIS PROYECTOS",
     circleColor = "bg-violet-900",
     textColor = "text-white",
     arrowColor = "brightness-100",

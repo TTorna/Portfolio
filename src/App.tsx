@@ -49,8 +49,8 @@ function App() {
           <img src="./Iso_Artwork_Full.PNG" className="md:h-1/2 md:w-1/2 h-4/5 w-4/5 z-10 md:pt-10 pt-4 animacion" alt="avatar" />
           <div className="absolute -z-10 md:w-[25rem] w-[15rem] md:h-[25rem] h-[15rem] md:mb-[5rem] mb-[14rem] bg-zinc-900 w-md rounded-full"></div>
           <div className="font-bold">
-            <h1 className="md:text-5xl text-4xl md:pb-12 pb-8">creative designer <br/> & developer.</h1>
-            <h3 className="md:pb-12 pb-8">Hi i'm <span className="text-purple-400 text-xl bg-gradient-to-r from-purple-500 to-blue-500 bg-clip-text text-transparent">Tomas Tornamira.</span> A passionate Front End <br/>Developer based in Argentina.</h3>
+            <h1 className="md:text-5xl text-4xl md:pb-12 pb-8">diseñador y desarrollador.</h1>
+            <h3 className="md:pb-12 pb-8 md:w-[25rem] w-[15rem]">Hola soy <span className="text-purple-400 md:text-xl text-lg bg-gradient-to-r from-purple-500 to-blue-500 bg-clip-text text-transparent">Tomas Tornamira.</span> Apasionado desarrollador Front-End ubicado en Argentina.</h3>
             <SpecialButton />
           </div>
         </section>
@@ -209,13 +209,13 @@ function App() {
               </a>
           </div>
         </section>
-        <footer id="footer" className="w-[100vw] md:min-h-[65vh] min-h-[fit-content] z-10 bg-white text-[#0E0E0E] flex flex-col justify-between items-center">
+        <footer id="footer" className="w-[100vw] min-h-[85vh] z-10 bg-white text-[#0E0E0E] flex flex-col justify-between items-center">
           <div className="w-full flex flex-col text-center gap-[1rem] font-bold justify-center items-center mt-[7rem] circulo-footer">
             <h1 className="text-[3rem] pb-[1rem]">TRABAJEMOS JUNTOS</h1>
             <h3 className="text-[1.1rem] text-[#0E0E0E] pb-[1rem]">Estoy esperando tu gran propuesta para hacerla realidad.</h3>
             <SpecialButton text="DIME HOLA" link="https://www.linkedin.com/in/tomas-tornamira-118428239/" circleColor="bg-gray-400" textColor="text-black" arrowColor="brightness-0" classStyle="boton-animado-footer"/>
           </div>
-          <div className="flex flex-row gap-[1rem] justify-center items-center mb-[2rem] mt-[8rem]">
+          <div className="flex flex-row gap-[1rem] justify-center items-center mb-[2rem] mt-[8rem] footer-circulo">
             <span className="text-sm font-bold mr-[0.5rem]">© 2025 Tomas Tornamira</span>
             <a href="https://www.linkedin.com/in/tomas-tornamira-118428239/" className="hover:bg-gray-300 rounded-full p-[0.25rem]" target="_blank" rel="noopener noreferrer">
               <img src='./linkedin.svg' className="w-[2rem] icono-redsocial" alt="LinkedIn" />

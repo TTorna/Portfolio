@@ -62,14 +62,14 @@ function Navbar () {
                   <div className='efecto-tachado'></div>
                 </a>
                 <a onClick={() => scrollToSection('about')} className={linkClasses+'flex flex-row items-center contenedor-tachado'} >
-                  <div className='titulo-tachado cursor-pointer'>ABOUT</div>
+                  <div className='titulo-tachado cursor-pointer'>SOBRE MI</div>
                   <div className='efecto-tachado'></div>
                 </a>
                 <a onClick={() => scrollToSection('proyectos')} className={linkClasses+'flex flex-row items-center contenedor-tachado'} >
-                  <div className='titulo-tachado cursor-pointer'>PROYECTS</div>
+                  <div className='titulo-tachado cursor-pointer'>PROYECTOS</div>
                 </a>
                 <a onClick={() => scrollToSection('contacto')} className={linkClasses+'flex flex-row items-center contenedor-tachado'} >
-                  <div className='titulo-tachado cursor-pointer'>CONTACT</div>
+                  <div className='titulo-tachado cursor-pointer'>CONTACTO</div>
                   <div className='efecto-tachado'></div>
                 </a>
               </div>
@@ -101,7 +101,7 @@ function Navbar () {
                   onClick={() => scrollToSection('about')} 
                   className={`w-full flex justify-center items-center font-medium contenedor-tachado before:bg-[#161616] before:left-[25%] hover:before:w-[50%] text-[2rem] z-[7] ${linkClasses} opacity-0 animate-[fadeIn_0.5s_ease-in-out_0.2s_forwards]`}
                 >
-                  ABOUT
+                  SOBRE MI
                 </a>
 
                 <a 

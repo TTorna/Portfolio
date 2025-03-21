@@ -414,3 +414,28 @@ h3 {
     transform: translateY(0);
   }
 }
+
+.footer-circulo::before{
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  border: #0e0e0e75 solid 2px;
+  width: 20rem;
+  height: 20rem;
+  margin-top: -20rem;
+  left: -10rem;
+  z-index: -1;
+  transition: all 0.5s cubic-bezier(.77,0,.175,1);
+}
+.footer-circulo::after{
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  border: #0e0e0e75 solid 2px;
+  width: 24rem;
+  height: 24rem;
+  margin-top: -20rem;
+  left: -12rem;
+  z-index: -1;
+  transition: all 0.5s cubic-bezier(.77,0,.175,1);
+}
