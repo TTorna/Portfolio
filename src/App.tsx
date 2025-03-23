@@ -170,7 +170,7 @@ function App() {
         <section id="contacto" className="w-screen md:min-h-screen min-h-[fit-content] md:pt-[0rem] pt-[4rem] md:pb-[0rem] pb-[4rem] z-10 bg-[#161616] flex flex-col justify-center items-center">
           <h2 className="text-3xl font-bold pb-[3rem]">CONTACTO</h2>
           <div 
-            className="flex flex-col gap-2 w-[23rem] h-[16rem] contact-container bg-[#2f1464] rounded-md shadow-lg"
+            className="flex flex-col gap-2 sm:w-[23rem] w-[18rem] before:w-full sm:h-[16rem] h-[12rem] before:h-full contact-container bg-[#2f1464] rounded-md shadow-lg"
             id="contact-container"
           >
               <a
@@ -179,15 +179,15 @@ function App() {
                 rel="noopener noreferrer"
                 className="flex flex-row gap-4 ml-[1.2rem] mt-[0.3rem] items-center redsocial-container"
               >
-                <img src='./linkedin.svg' className="w-[3rem] icono-redsocial" alt="LinkedIn" />
-                <h3 className="text-md text-black font-bold texto-redsocial">/Tomas Tornamira</h3>
+                <img src='./linkedin.svg' className="sm:w-[3rem] w-[2rem] icono-redsocial" alt="LinkedIn" />
+                <h3 className="sm:text-md text-sm sm:overflow-visible overflow-hidden text-black font-bold texto-redsocial">/Tomas Tornamira</h3>
               </a>
               <a
                 href="mailto:Tototornamira@gmail.com"
                 className="flex flex-row gap-4 ml-[1.2rem] mt-[0.3rem] items-center redsocial-container"
               >
-                <img src='./gmail.svg' className="w-[3rem] icono-redsocial" alt="Gmail" />
-                <h3 className="text-md text-black font-bold texto-redsocial">Tototornamira@gmail.com</h3>
+                <img src='./gmail.svg' className="sm:w-[3rem] w-[2rem] icono-redsocial" alt="Gmail" />
+                <h3 className="sm:text-md text-sm sm:overflow-visible overflow-hidden text-black font-bold texto-redsocial">Tototornamira@gmail.com</h3>
               </a>
               <a
                 href="https://github.com/TTorna"
@@ -195,8 +195,8 @@ function App() {
                 rel="noopener noreferrer"
                 className="flex flex-row gap-4 ml-[1.2rem] mt-[0.3rem] items-center redsocial-container"
               >
-                <img src='./github.svg' className="w-[3rem] icono-redsocial" alt="Github" />
-                <h3 className="text-md text-black font-bold texto-redsocial">/TTorna</h3>
+                <img src='./github.svg' className="sm:w-[3rem] w-[2rem] icono-redsocial" alt="Github" />
+                <h3 className="sm:text-md text-sm sm:overflow-visible overflow-hidden text-black font-bold texto-redsocial">/TTorna</h3>
               </a>
               <a
                 href="https://x.com/TTorna_"
@@ -204,8 +204,8 @@ function App() {
                 rel="noopener noreferrer"
                 className="flex flex-row gap-4 ml-[1.2rem] mt-[0.3rem] items-center redsocial-container"
               >
-                <img src='./X.svg' className="w-[3rem] icono-redsocial" alt="Twitter" />
-                <h3 className="text-md text-black font-bold texto-redsocial">/TTorna_</h3>
+                <img src='./X.svg' className="sm:w-[3rem] w-[2rem] icono-redsocial" alt="Twitter" />
+                <h3 className="sm:text-md text-sm sm:overflow-visible overflow-hidden text-black font-bold texto-redsocial">/TTorna_</h3>
               </a>
           </div>
         </section>
