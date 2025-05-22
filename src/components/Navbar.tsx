@@ -1,9 +1,12 @@
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
+import { LanguageSelector } from './LanguageSelector';
+import { useLanguage } from '../context/LanguageContext';
 
 function Navbar () {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const { t } = useLanguage();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -58,20 +61,23 @@ function Navbar () {
               {/* Desktop Menu */}
               <div className="hidden md:flex items-center space-x-8 px-8">
                 <a onClick={() => scrollToSection('home')} className={linkClasses+'flex flex-row items-center contenedor-tachado'} >
-                  <div className='titulo-tachado cursor-pointer'>HOME</div>
+                  <div className='titulo-tachado cursor-pointer'>{t('home')}</div>
                   <div className='efecto-tachado'></div>
                 </a>
                 <a onClick={() => scrollToSection('about')} className={linkClasses+'flex flex-row items-center contenedor-tachado'} >
-                  <div className='titulo-tachado cursor-pointer'>SOBRE MI</div>
+                  <div className='titulo-tachado cursor-pointer'>{t('about')}</div>
                   <div className='efecto-tachado'></div>
                 </a>
                 <a onClick={() => scrollToSection('proyectos')} className={linkClasses+'flex flex-row items-center contenedor-tachado'} >
-                  <div className='titulo-tachado cursor-pointer'>PROYECTOS</div>
+                  <div className='titulo-tachado cursor-pointer'>{t('projects')}</div>
                 </a>
                 <a onClick={() => scrollToSection('contacto')} className={linkClasses+'flex flex-row items-center contenedor-tachado'} >
-                  <div className='titulo-tachado cursor-pointer'>CONTACTO</div>
+                  <div className='titulo-tachado cursor-pointer'>{t('contact')}</div>
                   <div className='efecto-tachado'></div>
                 </a>
+                <div className="ml-4 border-l border-white/20 pl-8">
+                  <LanguageSelector />
+                </div>
               </div>
 
               {/* Mobile menu button */}
@@ -94,29 +100,33 @@ function Navbar () {
                   onClick={() => scrollToSection('home')} 
                   className={`w-full flex justify-center items-center font-medium contenedor-tachado before:bg-[#161616] before:left-[25%] hover:before:w-[50%] text-[2rem] z-[7] ${linkClasses} opacity-0 animate-[fadeIn_0.5s_ease-in-out_0.1s_forwards]`}
                 >
-                  HOME
+                  {t('home')}
                 </a>
 
                 <a 
                   onClick={() => scrollToSection('about')} 
                   className={`w-full flex justify-center items-center font-medium contenedor-tachado before:bg-[#161616] before:left-[25%] hover:before:w-[50%] text-[2rem] z-[7] ${linkClasses} opacity-0 animate-[fadeIn_0.5s_ease-in-out_0.2s_forwards]`}
                 >
-                  SOBRE MI
+                  {t('about')}
                 </a>
 
                 <a 
                   onClick={() => scrollToSection('proyectos')} 
                   className={`w-full flex justify-center items-center font-medium contenedor-tachado before:bg-[#161616] before:left-[25%] hover:before:w-[50%] text-[2rem] z-[7] ${linkClasses} opacity-0 animate-[fadeIn_0.5s_ease-in-out_0.3s_forwards]`}
                 >
-                  PROYECTOS
+                  {t('projects')}
                 </a>
                 
                 <a 
                   onClick={() => scrollToSection('contacto')} 
                   className={`w-full flex justify-center items-center font-medium contenedor-tachado before:bg-[#161616] before:left-[25%] hover:before:w-[50%] text-[2rem] z-[7] ${linkClasses} opacity-0 animate-[fadeIn_0.5s_ease-in-out_0.4s_forwards]`}
                 >
-                  CONTACTO
+                  {t('contact')}
                 </a>
+
+                <div className="mt-8 border-t border-white/20 pt-8 w-full flex justify-center">
+                  <LanguageSelector />
+                </div>
               </div>
             </div>
           )}
